@@ -1,54 +1,116 @@
-# Speech-to-Sign-language-Translator
-**An application which takes in live speech or audio recording as input, converts it into text and displays the relevant Indian Sign Language images or GIFs.**
-- Front-end using EasyGui.
-- Speech as input through microphone using PyAudio. 
-- Speech recognition using Google Speech API and Sphix(for offline use).
-- Text Preprocessing using NLP.
-- Dictionary based Machine Translation.
+# Automatic Indian Sign Language Translator
 
-## To run the application.
-1. Open the Downloads folder and then open the terminal.
-2. From the terminal, run the *main* python file using the command **python main.py**.
-3. The application interface appears on the screen.
-4. Hit the record button to start taking speech as input.
-5. Any speech recorded is then processed and respective outputs are shown accordingly.
-6. To exit the application using speech, say *goodbye*.
+## Overview
 
+The **Automatic Indian Sign Language Translator** is a solution designed to bridge the communication gap between the hearing and deaf communities in India. This system converts English and Hindi speech into Indian Sign Language (ISL) visuals, including images, GIFs, and 3D animated avatars. By offering real-time, seamless translation, it improves communication for deaf individuals, educators, and interpreters.
 
-**Sign language is a visual language that is used by deaf people as their mother tongue. Unlike acoustically conveyed sound patterns, sign language uses body language and manual communication to fluidly convey the thoughts of a person. Due to considerable time required in learning the Sign Language,  it becomes difficult to communicate with these specially abled people, and thus creates a communication gap.**
+## Key Features
 
-## Objective
-**This Audio to Sign Language converter aims at :**
-- Providing information access and services to deaf people in Indian sign language.
-- Developing a scalable project which can be extended to capture whole vocabulary of ISL through manual and non-manual signs
+- **Real-Time Translation:** Converts speech from English or Hindi into ISL visuals in real-time, facilitating immediate communication.
+- **3D/Animated Avatars:** Engaging 3D avatars demonstrate ISL gestures, offering dynamic and interactive communication.
+- **Customizable Interface:** Users can adjust the font size, select languages, and access tutorials for improved usability.
+- **Freemium Revenue Model:** Includes both free and premium features, with potential for institutional partnerships.
 
-It can be developed as a desktop or mobile application to enable specially abled people to communicate easily and effectively with others
+## Uniqueness
 
-**Sign language is a visual language that is used by deaf people as their mother tongue. Unlike acoustically conveyed sound patterns, sign language uses body language and manual communication to fluidly convey the thoughts of a person. Due to considerable time required in learning the Sign Language, people find it difficult to communicate with these specially abled people, creating a communication gap. Thus, we propose an application which takes in live speech or audio recording as input, converts it into text and displays the relevant Indian Sign Language images or GIFs.**
+- **Targeted for ISL:** Specifically designed for Indian Sign Language, addressing a gap in the Indian market.
+- **Real-Time Translation with 3D Avatars:** Unlike existing systems, our solution offers dynamic, engaging visuals and real-time translation.
+- **Advanced NLP and Machine Learning:** Ensures accurate and context-aware speech-to-sign interpretation for better accessibility.
 
-## Algorithm
-Audio to Sign Language Translator
-1. Start
-2. Getting the Speech
-   1. Listen for 1 second and calibrate the energy threshold for ambient noise
-levels.
-   2. Listen the Speech using Microphone.
-Now the energy threshold is already set to a good value, and we can
-reliably catch speech right away.
-3. Recognise the Speech.
-4. Convert Speech to Text.
-   1. Make the Text to lowercase for further manipulation.
-5. Detected Text
-   1. If “goodbye” then exit.
-   2.Else if Detected Text in predefined Dictionary Words. Display
-respective GIFs of the Phrase.
-   3. Else Count the Letters of the Word/Phrase.
-      1. Display the Visual of the phrase with some delay of Actions.
-   4. Continue all the steps from Step 3, and continue till the Speech Ends.
-6. If Error in Step 2, That is if no Speech Detected then display error message
-“Could not listen”.
+## Existing System
 
-**Due to considerable time required in learning the Sign Language, people find it difficult to communicate with these specially abled people, creating a communication gap. Thus the Audio to Sign Language converter is important and significant because it helps in providing information access and services to deaf people in Indian sign language and develops a scalable project which can be extended to capture whole vocabulary of ISL through manual and non-manual signs. It also can be developed as a desktop or mobile application to enable specially abled people to communicate easily and effectively with others.**
+While many existing solutions focus on American Sign Language (ASL), the Indian market lacks robust tools for ISL. Most ISL tools offer basic word-by-word translations, which often miss the nuances and full complexity of ISL. Additionally, current systems typically lack real-time translation and rely on outdated or incomplete datasets, limiting their usability for daily communication.
 
-The project before enhancement and modification was cloned from <a href = "https://github.com/Shubh-Yadav/Automatic-Indian-Sign-Language-Translator">Shubh-Yadav</a>
-This project is now modified for better and enhanced speech recognition. Also added the program to work in offline mode.
+## Technologies Used
+
+- **Frontend:** Python & Unity
+- **Backend:** Python
+- **Machine Learning:** Deep Neural Networks
+- **Animations:** Unity
+- **Programming Languages:** Python, C#
+
+## Use Cases
+
+1. **Input Capture:** Users can provide video, audio, or text in English or Hindi, with videos converted to audio and then to text.
+2. **Text Processing:** Hindi text is translated into English for processing.
+3. **ISL Gesture Matching:** The system matches the translated text with ISL gestures from the database.
+4. **Real-Time Output:** Generates 3D avatars, GIFs, or videos for ISL gestures in real-time.
+5. **Fallback for Unavailable Phrases:** If no exact match is found, the system provides a word-by-word ISL translation.
+
+## System Analysis
+
+- **Translation Accuracy:** Measures how well speech is converted to ISL gestures.
+- **Real-Time Efficiency:** Monitors the speed and responsiveness of the translation process.
+- **User Interaction:** Tracks how users engage with 3D avatars and ISL visuals.
+- **Database Coverage:** Evaluates the completeness of the ISL gesture database.
+
+## Dependencies
+
+- **Speech-to-Text API:** Google or Azure API for converting audio input to text in real-time.
+- **3D Animation Libraries:** Unity and Blender for generating ISL gestures and avatars in the app.
+
+## Impact on Target Audience
+
+### Deaf Community
+
+- **Enhanced Communication:** Converts English and Hindi into ISL visuals for quicker and clearer communication.
+- **Localized Support:** Focused on Indian Sign Language (ISL), making it highly useful for Indian users compared to tools focused on ASL.
+- **Real-Time Interaction:** Provides engaging, real-time visual feedback using 3D avatars and live translation.
+- **Comprehensive Understanding:** All inputs are covered with GIFs and hand gestures to improve communication accuracy.
+- **Educational Resource:** Helps users learn ISL interactively through engaging visuals and avatars.
+
+### Social Benefits
+
+- **Improved Accessibility:** Simplifies communication for the deaf community by providing real-time ISL translation.
+- **Engaging User Experience:** Interactive 3D avatars and AR models make the user experience engaging and effective.
+
+### Economic Benefits
+
+- **Revenue and Expansion Potential:** The freemium model offers scalability and growth opportunities.
+- **Cross-Platform Availability:** Available on all devices, ensuring wide accessibility.
+
+### Environmental Benefits
+
+- **Digital Communication:** Reduces the need for physical materials.
+- **Efficient Resource Use:** Utilizes AR and 3D models, minimizing waste.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.7+  
+- Unity (for animations and avatars)
+
+## Running the Project
+
+1. **Clone this repository:**
+
+   ```bash
+   git clone https://github.com/zeenatmuj/automatic-indian-sign-language-translator.git
+
+2. **Navigate to the project folder:**
+
+   ```bash
+   cd automatic-indian-sign-language-translator
+   
+3. **Start the application:**
+
+   ```bash
+   python app.py
+   
+4. **Access the application through your browser or the relevant device.**
+
+### Future Improvements
+
+- Expansion of the ISL gesture database to cover more phrases and expressions.
+- Integration with voice assistants for seamless interaction.
+- Support for additional languages beyond Hindi and English.
+- Enhanced machine learning models for more accurate translation.
+
+### Acknowledgements
+
+- **Unity** for animation and 3D model generation.
+- **Google/ Azure Speech-to-Text API** for real-time audio-to-text conversion.
+- **Blender** for 3D animation creation.
+
+The project before enhancement and modification was cloned from <a href="https://github.com/zeenatmuj/Automatic-Indian-Sign-Language-Translator">Zeenat Mujawar</a>
