@@ -49,6 +49,7 @@ While many existing solutions focus on American Sign Language (ASL), the Indian 
 - **Speech-to-Text API:** Google or Azure API for converting audio input to text in real-time.
 - **3D Animation Libraries:** Unity and Blender for generating ISL gestures and avatars in the app.
 
+
 ## Impact on Target Audience
 
 ### Deaf Community
@@ -100,14 +101,14 @@ While many existing solutions focus on American Sign Language (ASL), the Indian 
    
 4. **Access the application through your browser or the relevant device.**
 
-### Future Improvements
+## Future Improvements
 
 - Expansion of the ISL gesture database to cover more phrases and expressions.
 - Integration with voice assistants for seamless interaction.
 - Support for additional languages beyond Hindi and English.
 - Enhanced machine learning models for more accurate translation.
 
-### Acknowledgements
+## Acknowledgements
 
 - **Unity** for animation and 3D model generation.
 - **Google/ Azure Speech-to-Text API** for real-time audio-to-text conversion.
