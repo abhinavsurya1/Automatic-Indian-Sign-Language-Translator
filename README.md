@@ -114,4 +114,3 @@ While many existing solutions focus on American Sign Language (ASL), the Indian 
 - **Google/ Azure Speech-to-Text API** for real-time audio-to-text conversion.
 - **Blender** for 3D animation creation.
 
-The project before enhancement and modification was cloned from <a href="https://github.com/zeenatmuj/Automatic-Indian-Sign-Language-Translator">Zeenat Mujawar</a>
